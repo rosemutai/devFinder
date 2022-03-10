@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>devFinder</title>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="dev.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" 
+    rel="stylesheet">
+
+    <!-- axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/f21fc63f88.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="nav">
+        <h4>devfinder</h4>
+        <div class="theme">
+            <!-- <p>Light</p> -->
+            <span></span>
+        </div>
+    </div>
+
+    <div class="search-form">
+        <div class="search-icon">
+            <i class="fa fa-search"></i>
+        </div>
+
+        <input id="user-input" type="text" placeholder="Search Github Username">
+        <button type="submit" id="search-btn">Search</button>
+    </div>
+
+    <div id="please" class="please-search">
+        <h2>Please enter the github user's name</h2>
+    </div>
+
+    <div id="info-display" class="display-information">
+        <div class="profile">
+            <img id="github-profile" src="" alt="">
+        </div>
+
+        <div class="further-details">
+            <div class="name-datejoined">
+                <h5 id="username" >Name:</h5>
+                <h5 id="date-joined">Date joined</h5>
+                
+            </div>
+
+            <div class="bio">
+                <p id="user-bio">Bio</p>
+            </div>
+
+            <div class="repo">
+                <div class="repositories">
+                    <h5 id="user-repositories">Repositories</h5>
+                    <!-- <p>32</p> -->
+                </div>
+
+                <div class="followers">
+                    <h5 id="user-followers"><p>Followers</p></h5>
+                    <!-- <p>327</p> -->
+                </div>
+
+                <div class="following">
+                    <h5 id="user-following">Following</h5>
+                    <!-- <p>332</p> -->
+                </div>
+               
+                
+                
+            </div>
+
+            <div class="personal-details">
+
+                <div class="card location">
+                    <span><i class="fas fa-map-marker-alt"></i></span>
+                    <h5 id="user-location">location</h5>
+                   
+                </div>
+
+                <div class="card website">
+                    <span><i class="fa fa-link"></i></span>
+                    <h5 id="website-url">www.home.away</h5>
+                    
+                </div>
+
+                <div class="card twitter">
+                    <span><i class="fab fa-twitter"></i></span>
+                    <h5 id="twitter-username">@twitter</h5>
+                  
+                </div>
+
+                <div class="card hub">
+                    <span><i class="far fa-building"></i></span>
+                    <h5 id="user-company">@twitterkenya</h5>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+    <script type="module">
+
+        // Import the functions you need from the SDKs you need
+
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-app.js";
+
+        // TODO: Add SDKs for Firebase products that you want to use
+
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+
+        // Your web app's Firebase configuration
+
+        const firebaseConfig = {
+
+            apiKey: "AIzaSyAAFmCsOnUP4yHGJwLF9W_oFISZgjLAF4E",
+
+            authDomain: "devfinder-508c9.firebaseapp.com",
+
+            projectId: "devfinder-508c9",
+
+            storageBucket: "devfinder-508c9.appspot.com",
+
+            messagingSenderId: "617979919397",
+
+            appId: "1:617979919397:web:2ff28cd5f18714cff4d3cc"
+
+        };
+
+
+        // Initialize Firebase
+
+        const app = initializeApp(firebaseConfig);
+
+    </script>
+</body>
+</html>

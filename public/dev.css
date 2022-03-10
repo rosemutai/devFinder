@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #090d1a;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav{
+    width: 50%;
+    margin: 4rem auto 0 auto;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.search-form{
+    width: 50%;
+    margin: 0 auto;
+    background-color: #303450;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 6px;
+    align-items: center;
+
+}
+
+i{
+   margin: 1.8rem 0 2rem 2rem;
+}
+
+.search-form input{
+    
+    width: 80%; 
+    /* background-color: blue; */
+    padding: 12px;
+    background-color: #303450;
+    border: none;
+    margin-left: 4px;
+    color: #fff; 
+}
+
+.search-form input:focus{
+    outline: none;
+}
+
+.search-form input::placeholder{
+    color: #fff;
+}
+
+.search-form button{
+    padding: 8px;
+    width: 120px;
+    border-radius: 5px;
+    background-color: rgb(0, 183, 255);
+    border: transparent;
+    color: #fff;
+    margin: 0.2rem 0.5rem;
+
+}
+
+.search-form button:hover{
+    background-color: rgb(138, 220, 252);
+}
+
+.display-information{
+    /* background-color: red; */
+    width: 50%;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 1rem;
+    border-radius: 12px;
+    display: flex;
+    background-color: #303450;
+}
+
+
+.display-information .profile{
+    /* background-color: blue; */
+    width: 30%;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0.5rem;
+}
+
+.display-information .further-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.further-details .name-datejoined{
+    width: 90%;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1rem;
+
+}
+
+.bio{
+    
+    padding: 8px auto;
+}
+
+.further-details .repo{
+    width: 90%;
+    background-color: #090d1a;
+    margin: 1rem 0 0 1rem;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+    align-items: center;
+
+}
+
+.further-details .bio{
+    width: 90%;
+    margin: 1rem auto;
+}
+
+/* .further-details .repo .repositories{
+    display: flex;
+    flex-direction: column;
+} */
+
+
+.card h5{
+    margin-left: 1rem;
+}
+
+.further-details .personal-details{
+    width: 90%;
+    margin: 0.5rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.personal-details .card{
+    width: 12rem;
+    margin: 0.1rem 0;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    
+}
+
+/* #please{
+    display: none;
+} */
+
+
+#info-display{
+    display: none;
+    height: 100%;
+}
+
+/* .display-information{
+    display: block;
+} */
+
+@media only screen and (max-width: 768px) {
+
+    .nav, .search-form{
+        width: 90%;
+
+    }
+
+    .display-information .profile{
+        /* background-color: blue; */
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .display-information{
+        width: 90%;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .display-information .further-details{
+        width: 90%;
+        margin: 1rem auto;
+        height: 90%;
+    }
+
+    .name-datejoined{
+        flex-direction: column;
+        height: 3rem;
+        justify-content: space-between;
+    }
+    
+
+    .further-details .repo{
+        margin: 1rem auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: stretch;
+        height: 100px;
+    }
+
+    .personal-details .card{
+        width: 90%;
+        margin: 0.5rem 0;
+       
+    }
+
+    .personal-details .card span{
+        margin-left: -2rem;
+    }
+
+    
+    
+    
+}
